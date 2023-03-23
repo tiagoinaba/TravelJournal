@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-color: #F55A5A;
+    display: flex;
+    justify-content: center;
+    gap: .7rem;
+    padding: 1.6rem 0;
+
+    .logo-img {
+        width: 24px;
+    }
+
+    .logo-text {
+        color: white;
+    }
+}
+
+.entry {
+    display: flex;
+    align-items: center;
+    width: 470px;
+    margin: 0 auto;
+    padding: 1.8rem 0;
+    gap: 2rem;
+
+    &__image {
+        width: 12.5rem;
+        height: 16.8rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .country {
+        text-transform: uppercase;
+        margin: 0 1.2rem 0 .4rem;
+        font-size: 1rem;
+        letter-spacing: .17rem;
+    }
+
+    .view-on-gmaps {
+        color: #918E9B;
+        font-family: inherit;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        margin: .4rem 0 1.7rem;
+    }
+
+    .description {
+        margin-top: .9rem;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #F5F5F5;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
